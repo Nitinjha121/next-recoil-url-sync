@@ -33,7 +33,7 @@ import { syncEffect } from "next-recoil-url-sync";
 import { atom } from "recoil";
 
 const nameQueryAtom = atom<string | null>({
-  key: "",
+  key: "nameQueryAtom",
   default: null,
   effects: [syncEffect({ queryName: "name", type: "String" })],
 });
