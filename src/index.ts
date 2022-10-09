@@ -6,7 +6,7 @@ import Router from "next/router";
 
 const isClient = typeof window !== "undefined";
 
-export const queryMap = new Map<string, string>();
+const queryMap = new Map<string, string>();
 
 interface ISyncEffectArgs {
   queryName: string;
